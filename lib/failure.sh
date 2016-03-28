@@ -1,4 +1,4 @@
-warnings=$(mktemp -t heroku-buildpack-nodejs-XXXX)
+warnings=$(mktemp -t buildpack-nodejs-XXXX)
 
 failure_message() {
   local warn="$(cat $warnings)"
@@ -16,7 +16,7 @@ failure_message() {
   fi
   echo ""
   echo "Love,"
-  echo "Heroku"
+  echo "NOT Heroku"
   echo ""
 }
 
